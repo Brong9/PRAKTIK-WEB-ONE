@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Sistem Manajemen</title>
+</head>
+<body>
+
+    <!-- Bagian Header -->
+    <header>
+        <h1>Dashboard Sistem Manajemen Jaringan</h1>
+        <p>Selamat datang, Administrator (NOC & Billing).</p>
+    </header>
+
+    <hr>
+
+    <!-- Bagian Navigasi Utama -->
+    <nav>
+        <h2>Menu Navigasi</h2>
+        <ul>
+            <li><a href="#ringkasan">Ringkasan Sistem</a></li>
+            <li><a href="#pelanggan">Daftar Klien PPPoE</a></li>
+            <li><a href="#perangkat">Status Perangkat (OLT & Router)</a></li>
+            <li><a href="#tagihan">Data Tagihan</a></li>
+        </ul>
+    </nav>
+
+    <hr>
+
+    <!-- Bagian Konten Utama -->
+    <main>
+        
+        <!-- Sesi Ringkasan Statistik -->
+        <section id="ringkasan">
+            <h2>Ringkasan Sistem Hari Ini</h2>
+            <ul>
+                <li><strong>Total Pelanggan Aktif:</strong> 1.245 User</li>
+                <li><strong>Total Bandwidth Digunakan:</strong> 2.5 Gbps</li>
+                <li><strong>Tiket Gangguan Jaringan:</strong> 2 Terbuka</li>
+            </ul>
+        </section>
+
+        <br>
+
+        <!-- Sesi Tabel Pemantauan -->
+        <section id="pelanggan">
+            <h2>Pemantauan Status Klien Terbaru</h2>
+            <!-- Atribut border="1" digunakan di sini hanya untuk memperjelas tabel karena tidak ada CSS -->
+            <table border="1" cellpadding="8" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>ID Pelanggan</th>
+                        <th>Nama Klien</th>
+                        <th>Paket Layanan</th>
+                        <th>Status Koneksi</th>
+                        <th>Uptime Session</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CLN-1011</td>
+                        <td>Budi Santoso</td>
+                        <td>20 Mbps - Home</td>
+                        <td>Terhubung</td>
+                        <td>12 Hari, 4 Jam</td>
+                    </tr>
+                    <tr>
+                        <td>CLN-1012</td>
+                        <td>Siti Aminah</td>
+                        <td>50 Mbps - Pro</td>
+                        <td>Terputus (LOS)</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>CLN-1013</td>
+                        <td>Warnet Maju Jaya</td>
+                        <td>100 Mbps - Bisnis</td>
+                        <td>Terhubung</td>
+                        <td>45 Hari, 1 Jam</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <br>
+    <hr>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2026 Sistem Manajemen Jaringan & Billing. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
